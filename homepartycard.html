@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodbye 2020</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+
+        body {
+            background-image: url('https://i.pinimg.com/564x/e8/df/23/e8df23b78068b63cf484157694f0b216.jpg');
+            background-size: auto;
+            background-position: center;
+        }
+
+        .envelope {
+
+            background-image: url('https://i.pinimg.com/236x/34/d2/9f/34d29f4e48ee007bd8048048621c06f5.jpg');
+            background-size: cover;
+            background-position: center;
+
+            width: 300px;
+            height: 300px;
+
+            margin: 300px auto auto auto;
+
+            cursor: pointer;
+        }
+
+        .msg {
+            color: black;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 70px;
+
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+
+        h1 {
+            color: rgb(255, 255, 255);
+            text-underline-position: below;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30px;
+            margin-top: 200px;
+
+        }
+
+        .msgbox {
+            background-color: rgb(252, 231, 174);
+            width: 450px;
+            height: 300px;
+            margin: auto;
+            color: black;
+            padding: 30px;
+            font-size: 27px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px rgb(250, 222, 146);
+            margin-bottom: 270px;
+            border-radius: 20px;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            h1 {
+                font-size: 27px;
+            }
+
+            .msgbox {
+                width: 270px;
+                height: 300px;
+                font-size: 18px;
+            }
+
+            .content {
+                margin: 70px auto 0px auto;
+            }
+
+            .envelope {
+                margin: 200px auto auto auto;
+            }
+        }
+    </style>
+
+    <script>
+        function open_letter(params) {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="msg"> ↗　↑　↖ </h2>
+    </div>
+
+    <div class="letter-open">
+        <h1> ✨ 　초　　대　　짱 　🌟 </h1>
+
+        <div class="msgbox">
+            마스크와 함께한 2020년... <br />
+            올해는 마스크와 제에발 이별하길 바라며 <br />
+            집들이를 가장한 집콕파티를 준비했습니다 <br />
+            사실 거창한건 아니고 그냥 놀다가요 <br />
+            <br />
+            일시 및 장소 : 추후 통지 <br />
+            준비물 : alcohol (안주는 내가 준비함) <br />
+            금지 품목 : 휴ㅠ지ㅠ <br />
+            <p class="from"> 집쥔 </p>
+        </div>
+    </div>
+</body>
+
+</html>
