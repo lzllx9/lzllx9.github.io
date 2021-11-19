@@ -21,14 +21,12 @@
 
         .envelope {
 
-            background-image: url('https://pbs.twimg.com/profile_images/1335178001374269442/4BragulO_400x400.jpg');
+            background-image: url(1.jpg);
             background-size: cover;
             background-position: center;
-
-            width: 450px;
-            height: 450px;
-
-            margin: 30px auto auto auto;
+            width: 500px;
+            height: 700px;
+            margin: auto auto auto auto;
 
             cursor: pointer;
         }
@@ -47,61 +45,60 @@
 
         .letter-open {
             display: none;
+            
         }
 
 
         h1 {
-            color: peru;
+            color: whitesmoke;
             text-underline-position: below;
             text-align: center;
-            font-size: 36px;
+            font-size: 20px;
             margin-bottom: 30px;
             margin-top: 30px;
 
         }
 
         .msgbox {
-            background-color: peru;
-            width: 450px;
-            height: 400px;
-            margin: auto;
-            color: whitesmoke;
-            padding: 30px;
-            font-size: 22px;
+            background-image: url(4.jpg);
+            background-size: cover;
+            background-position: center;
+            margin: auto auto auto auto;
+            width: 500px;
+            height: 700px;
+        }
+        
+        .msgtxt {
+            color: rgb(163, 9, 9);
+            text-align: center;
+            font-size: 20px;
             line-height: 32px;
-            box-shadow: 0px 0px 10px 0px rgb(247, 230, 138);
-            margin-bottom: 270px;
-            border-radius: 20px;
         }
 
-        .from {
-            text-align: right;
-            margin-bottom: 0px;
+        .from {            
+            color: whitesmoke;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 20px;
         }
 
-        @media screen and (max-width: 720px) {
-            
-            .envelope {
-                width: 300px;
-                height: 300px;
-            }
-
+        @media screen and (max-width: 760px) {
             h1 {
-                font-size: 20px;
+                font-size: 27px;
             }
 
             .msgbox {
                 width: 270px;
-                height: 400px;
-                font-size: 15px;
+                height: 300px;
+                font-size: 18px;
             }
 
             .content {
-                margin: 50px auto 0px auto;
+                margin: 70px auto 0px auto;
             }
 
             .envelope {
-                margin: 10px auto auto auto;
+                margin: 200px auto auto auto;
             }
         }
     </style>
@@ -119,28 +116,34 @@
 <body>
     <div class="letter-close">
 
-        <h1 class="msg"> '할로윈인데 그냥 자기 몬가 아쉽다구...' </h1>
+        <h1 class="msg"> I take a halloween party for you guys ! </h1>
         <div class="envelope" onclick="open_letter()"></div>
-        <h2 class="msg"> ↑　↑　↑ </h2>
+        <h2 class="msg"> Put your hands on me </h2>
     </div>
 
     <div class="letter-open">
         <h1> 😈👻 Happy Halloween 🎃🎈 </h1>
 
         <div class="msgbox">
-            Trick or treat ! 🍭🍬 <br />
-            할로윈을 그냥 보내기 아쉬운 <br />
-            술과 춤과 밤을 사랑하는 여러분을 <br />
-            할로윈 핑계로 노는 파티에 초대합니다♡ <br />
+            <p class="msgtxt">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            Trick or treat ! <br />
+            <span style=color:turquoise ;>할로윈을</span> 그냥 보내기 아쉬운 <br />
+            <span style=color:turquoise ;>술과 춤과</span> 밤을 사랑하는 여러분을 <br />
+            <span style=color:turquoise ;>할로윈 핑</span>계로 노는 파티에 초대합니다. <br />
             <br />
-            일시 : 21/10/31 8pm~집가고 싶을 때 <br />
-            장소 : 연희동 51-32 엘림하우스 206호 <br />
-            준비물 : 저녁 알아서 먹고오기 <br />
-                    (갓파더 럼콕 소주 핑거푸드 제공) <br />
-            드레스코드 : 없음. 분장 안해도 됨 <br />
-            ※ 초대받지 못한 친구들에게 비밀 지키기 <br />
-            <p class="from"> @hey.co.kr </p>
+            <span style=color:turquoise ;>일시 :</span> 21/10/31 8pm~집가고 싶을 때 <br />
+            <span style=color:turquoise ;>장소 :</span> 연희동 51-32 엘림하우스 206호 <br />
+            <span style=color:turquoise ;>준비물 :</span> 저녁 각자 먹고오기 (술과 핑거푸드 제공) <br />
+            <span style=color:turquoise ;>드레스코드 :</span> 없음. 분장 안해도 됨 <br />   
+            </p> 
         </div>
+        <h2 class="from"> @hey.co.kr </p>
     </div>
 </body>
 
